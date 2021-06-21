@@ -1,7 +1,18 @@
+:root {
+  --red-clr: #ea4c89;
+}
+
 body::before {
   content: "";
   display: block;
   height: 60px;
+}
+
+.bg-pink {
+  background: var(--red-clr);
+}
+.text-pink {
+  color: var(--red-clr);
 }
 .review {
   margin: 0 auto;
@@ -12,7 +23,7 @@ body::before {
 }
 
 .carousel-item {
-  height: 30rem;
+  height: 20rem;
 }
 .carousel-item img {
   height: 15rem;
