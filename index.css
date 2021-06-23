@@ -1,5 +1,6 @@
 :root {
   --red-clr: #ea4c89;
+  --transition: all 0.5s linear;
 }
 
 body::before {
@@ -25,22 +26,13 @@ body::before {
 .carousel-item {
   height: 20rem;
 }
-.carousel-item img {
-  height: 15rem;
-  width: 15rem;
-  object-fit: cover;
-  object-position: center center;
+.card:hover {
+  background: var(--red-clr);
+  color: #fff;
+  transition: var(--transition);
 }
 @media (min-width: 768px) {
   .form-responsive {
     width: 50%;
   }
 }
-
-/* @media (max-width: 768px) {
-  .carousel-item {
-    background-size: cover;
-    background: no-repeat scroll center scroll;
-    height: 20rem;
-  }
-} */
