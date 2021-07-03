@@ -15,13 +15,13 @@ body::before {
 .text-pink {
   color: var(--red-clr);
 }
-.review {
+/* .review {
   margin: 0 auto;
   width: 1000px;
-}
-.review-body {
+} */
+/* .review-body {
   height: 100%;
-}
+} */
 
 .carousel-item {
   height: 20rem;
@@ -34,5 +34,11 @@ body::before {
 @media (min-width: 768px) {
   .form-responsive {
     width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
   }
 }
